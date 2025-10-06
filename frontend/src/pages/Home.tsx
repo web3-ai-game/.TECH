@@ -1,23 +1,26 @@
 import { Link } from 'react-router-dom'
 import { Button } from '../components/ui/button'
 import { Gamepad2, Zap, Shield, Trophy } from 'lucide-react'
+import { useTranslation } from 'react-i18next';
 
 export function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className="container mx-auto px-4 py-16">
       <section className="text-center mb-20">
         <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Welcome to .TECH
+          {t('welcome')}
         </h1>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          The next generation Web3 AI-powered gaming platform. Play, earn, and compete in a decentralized ecosystem.
+          {t('description')}
         </p>
         <div className="flex gap-4 justify-center">
           <Button size="lg" asChild>
-            <Link to="/dashboard">Get Started</Link>
+            <Link to="/dashboard">{t('get_started')}</Link>
           </Button>
           <Button size="lg" variant="outline">
-            Learn More
+            {t('learn_more')}
           </Button>
         </div>
       </section>
@@ -25,29 +28,29 @@ export function Home() {
       <section className="grid md:grid-cols-3 gap-8 mb-20">
         <FeatureCard
           icon={<Zap className="w-12 h-12 text-primary" />}
-          title="Lightning Fast"
-          description="Experience seamless gameplay with our optimized blockchain infrastructure"
+          title={t('feature_fast_title')}
+          description={t('feature_fast_desc')}
         />
         <FeatureCard
           icon={<Shield className="w-12 h-12 text-primary" />}
-          title="Secure & Transparent"
-          description="All game logic and rewards are secured by smart contracts on the blockchain"
+          title={t('feature_secure_title')}
+          description={t('feature_secure_desc')}
         />
         <FeatureCard
           icon={<Trophy className="w-12 h-12 text-primary" />}
-          title="Play to Earn"
-          description="Compete in tournaments and earn real rewards in cryptocurrency"
+          title={t('feature_earn_title')}
+          description={t('feature_earn_desc')}
         />
       </section>
 
       <section className="bg-card rounded-lg p-12 text-center">
         <Gamepad2 className="w-16 h-16 mx-auto mb-6 text-primary" />
-        <h2 className="text-3xl font-bold mb-4">Ready to Start Playing?</h2>
+        <h2 className="text-3xl font-bold mb-4">{t('ready_to_play')}</h2>
         <p className="text-muted-foreground mb-6">
-          Connect your wallet and join thousands of players worldwide
+          {t('connect_wallet')}
         </p>
         <Button size="lg" asChild>
-          <Link to="/dashboard">Launch App</Link>
+          <Link to="/dashboard">{t('launch_app')}</Link>
         </Button>
       </section>
     </div>

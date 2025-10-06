@@ -1,6 +1,7 @@
 import { useWeb3 } from '../context/Web3Context'
 import { Button } from '../components/ui/button'
 import { Wallet, TrendingUp, Users, Trophy } from 'lucide-react'
+import HealthCheck from '../components/HealthCheck';
 
 export function Dashboard() {
   const { account, connectWallet } = useWeb3()
@@ -62,6 +63,8 @@ export function Dashboard() {
           <p className="text-muted-foreground">No active tournaments. Check back soon!</p>
         </div>
       </div>
+
+      <HealthCheck />
     </div>
   )
 }
