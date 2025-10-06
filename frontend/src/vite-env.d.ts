@@ -1,5 +1,7 @@
 /// <reference types="vite/client" />
 
+import { ethers } from 'ethers';
+
 interface Window {
-  ethereum?: any
+  ethereum?: ethers.Eip1193Provider;
 }
