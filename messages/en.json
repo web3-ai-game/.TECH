@@ -1,0 +1,14 @@
+{
+  "Header": {
+    "home": "Home",
+    "tutorials": "Tutorials",
+    "resources": "Resources"
+  },
+  "Homepage": {
+    "title": "Learn to Build with Natural Language",
+    "subtitle": "Go from zero to full-stack developer, using plain English to code. No prior experience needed."
+  },
+  "TutorialsPage": {
+    "title": "All Tutorials"
+  }
+}

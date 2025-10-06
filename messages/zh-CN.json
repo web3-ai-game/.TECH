@@ -1,0 +1,14 @@
+{
+  "Header": {
+    "home": "首页",
+    "tutorials": "教程",
+    "resources": "资源"
+  },
+  "Homepage": {
+    "title": "学习用自然语言构建",
+    "subtitle": "从零开始成为全栈开发者，使用简单的中文进行编码。无需任何经验。"
+  },
+  "TutorialsPage": {
+    "title": "所有教程"
+  }
+}
