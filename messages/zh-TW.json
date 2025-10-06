@@ -1,0 +1,14 @@
+{
+  "Header": {
+    "home": "首頁",
+    "tutorials": "教程",
+    "resources": "資源"
+  },
+  "Homepage": {
+    "title": "學習用自然語言構建",
+    "subtitle": "從零開始成為全棧開發者，使用簡單的中文進行編碼。無需任何經驗。"
+  },
+  "TutorialsPage": {
+    "title": "所有教程"
+  }
+}

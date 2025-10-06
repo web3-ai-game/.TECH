@@ -1,0 +1,14 @@
+{
+  "Header": {
+    "home": "Laman Utama",
+    "tutorials": "Tutorial",
+    "resources": "Sumber"
+  },
+  "Homepage": {
+    "title": "Belajar Membina dengan Bahasa Semula Jadi",
+    "subtitle": "Jadi pembangun tindanan penuh dari sifar, menggunakan Bahasa Malaysia untuk mengekod. Tiada pengalaman diperlukan."
+  },
+  "TutorialsPage": {
+    "title": "Semua Tutorial"
+  }
+}
